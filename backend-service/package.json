@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start-verbose": "set DEBUG=app & nodemon --verbose app.js",
-    "start-all-debug": "set DEBUG=* & nodemon app.js",
-    "start": "nodemon app.js"
+    "start-verbose": "node init && set DEBUG=app & nodemon --verbose app.js",
+    "start-all-debug": "node init && set DEBUG=* & nodemon app.js",
+    "start": "node init && nodemon app.js"
   },
   "keywords": [
     "Node.js",
